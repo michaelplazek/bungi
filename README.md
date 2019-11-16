@@ -19,7 +19,7 @@ Download and install [Android Studio](https://developer.android.com/studio) to s
 * Go to `Preferences` -> `Appearance & Behavior` -> `System Settings` -> `Android SDK`. Click on the "SDK Tools" tab and make sure you have at least one version of the "Android SDK Build-Tools" installed.
 * Copy or remember the path listed in the box that says "Android SDK Location."
 * Add the following lines to your `~/.bash_profile`
-    * `export ANDROID_SDK=/Users/myuser/Library/Android/sdks`
+    * `export ANDROID_SDK=/Users/myuser/Library/Android/sdk`
     * `export PATH=/Users/myuser/Library/Android/sdk/platform-tools:$PATH`
 * Make sure that you can run `adb` from your terminal.
 * Set up a new Virtual Device
