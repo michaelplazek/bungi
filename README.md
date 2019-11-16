@@ -22,6 +22,9 @@ Download and install [Android Studio](https://developer.android.com/studio) to s
     * `export ANDROID_SDK=/Users/myuser/Library/Android/sdk`
     * `export PATH=/Users/myuser/Library/Android/sdk/platform-tools:$PATH`
 * Make sure that you can run `adb` from your terminal.
+* Set up a new Virtual Device
+    * From the Android Studio main screen, go to `Tools` -> `Android` -> `AVD Manager`.
+    * Press the "+ Create Virtual Device" button.
 
 Download and install [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) (if you don't already have it) to simulate iOS
 * Open Xcode, then choose `Preferences` from the Xcode menu (or press `⌘+`,). Go to the Locations panel and install the tools by selecting the most recent version in the Command Line Tools dropdown.
@@ -36,8 +39,19 @@ Download the Expo client on your mobile device if you want to run the applicatio
 
 A new tab should open in your browser with the Expo client.
 
-* To run the app on your mobile device, select the `tunnel` option in the bottom, left-hand corner and scan the QR code with your Expo app.
-* To run the app with the Android emulator, click on `Run on Android device/emulator` and it should automatically open in the Android Studio Emulator. You can also launch into Android by pressing `a` in the terminal where the expo client is running.
-* To run the app with the iPhone emulator, run an emulator from XCode and then click on `Run on iOS simulator`. You can also launch into iOS by pressing `i` in the terminal where the expo client is running.
+* To run the app on your mobile device
+    * Select the `tunnel` option in the bottom, left-hand corner of the screen.
+    * Scan the QR code with your Expo app.
+    * Then the app will open up on your device.
+* To run the app with the Android emulator
+    * Launch Android Studio.
+    * Go to `Tools` -> `AVD Manager` to open up your Virtual Devices, and click the green play button to launch the emulator (it will take a moment to boot up).
+    * Click on `Run on Android device/emulator` in the Expo client and it will install the Expo client in your virtual Android device and launch the app.
+    * _NOTE: You can also launch into Android by pressing `a` in the terminal where the expo client is running or use the start command `yarn start --android`._
+* To run the app with the iPhone emulator
+    * Launch XCode.
+    * Go to `XCode` -> `Open Developer Tool` -> `Simulator` (it will take a moment to boot up).
+    * Click on `Run on iOS simulator` in the Expo client and it will install the Expo app in your virtual iOS device and launch the app.
+    * _NOTE: You can also launch into iOS by pressing `i` in the terminal where the expo client is running or use the start command `yarn start --ios`._
 
 
