@@ -22,6 +22,9 @@ Download and install [Android Studio](https://developer.android.com/studio) to s
     * `export ANDROID_SDK=/Users/myuser/Library/Android/sdk`
     * `export PATH=/Users/myuser/Library/Android/sdk/platform-tools:$PATH`
 * Make sure that you can run `adb` from your terminal.
+* Set up a new Virtual Device
+    * From the Android Studio main screen, go to `Configure` -> `AVD Manager`.
+    * Press the "+ Create Virtual Device" button.
 
 Download and install [XCode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) (if you don't already have it) to simulate iOS
 * Open Xcode, then choose `Preferences` from the Xcode menu (or press `⌘+`,). Go to the Locations panel and install the tools by selecting the most recent version in the Command Line Tools dropdown.
