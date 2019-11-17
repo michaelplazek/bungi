@@ -1,10 +1,14 @@
-import React from 'react';
+
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+
+  useEffect(() => alert('mwap'));
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text onLongPress={() => alert('meep')} style={styles.text}>Bungi</Text>
     </View>
   );
 }
@@ -12,8 +16,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'powderblue',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  text: {
+    fontSize: 24,
+  }
 });
