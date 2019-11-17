@@ -1,22 +1,17 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-
-  useEffect(() => alert('mwap'));
-
-  return (
+export const Chat = () => (
     <View style={styles.container}>
-      <Text onLongPress={() => alert('meep')} style={styles.text}>Bungi</Text>
+      <Text style={styles.text}>Chat</Text>
     </View>
-  );
-}
+);
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'powderblue',
+    backgroundColor: 'red',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -24,3 +19,5 @@ const styles = StyleSheet.create({
     fontSize: 24,
   }
 });
+
+export default Chat;
