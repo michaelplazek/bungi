@@ -10,7 +10,7 @@ export const Discover = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "green",
+    backgroundColor: "blue",
     alignItems: "center",
     justifyContent: "center"
   },
