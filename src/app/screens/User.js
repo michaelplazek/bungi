@@ -1,22 +1,24 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { compose } from "redux";
+import { Text, View } from "react-native";
+import { withStyles } from "../HOCs";
 
-export const User = () => (
+export const User = ({ styles }) => (
   <View style={styles.container}>
     <Text style={styles.text}>User</Text>
   </View>
 );
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "red",
-    alignItems: "center",
-    justifyContent: "center"
-  },
-  text: {
-    fontSize: 24
-  }
-});
-
-export default User;
+export default compose(
+  withStyles({
+    container: {
+      flex: 1,
+      backgroundColor: "red",
+      alignItems: "center",
+      justifyContent: "center"
+    },
+    text: {
+      fontSize: 24
+    }
+  })
+)(User);
