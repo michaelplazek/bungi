@@ -1,3 +1,5 @@
+> ##This has been moved to https://github.com/Bungi-Developers/bungi-ui
+
 # Bungi
 "Take the leap"
 
