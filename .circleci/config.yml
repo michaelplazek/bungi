@@ -6,4 +6,4 @@ orbs:
 workflows:
   check:
     jobs:
-      -prettier/check
+      - prettier/check
