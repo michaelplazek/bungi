@@ -1,6 +1,6 @@
 import { registerRootComponent } from 'expo';
 
-import Router from './Router'
+import Router from './navigation/Router'
 
 registerRootComponent(Router);
 

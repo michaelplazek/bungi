@@ -1,4 +1,4 @@
-import { Discover, Chat, User } from "./screens";
+import { Discover, Chat, User } from "../screens";
 
 export const routeConfig = {
     Discover: {
