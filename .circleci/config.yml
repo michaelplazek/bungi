@@ -6,4 +6,5 @@ orbs:
 workflows:
   check:
     jobs:
-      - prettier/check
+      - prettier/check:
+          arguments: 'src/app/**/*.js'
